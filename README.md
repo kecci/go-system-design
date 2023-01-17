@@ -1,9 +1,11 @@
 # Go System Design
 
+Example Project for System Design C4 Model with Golang Libary goadesign.
+
 ## Key Features
 
 - Domain Driven Design
-- C4 Model
+- C4 Model (https://c4model.com/)
 - Go Language
 - Using Library https://github.com/goadesign/model
 
