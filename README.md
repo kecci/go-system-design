@@ -6,8 +6,8 @@ Example Project for System Design C4 Model with Golang Libary goadesign.
 
 - Domain Driven Design
 - C4 Model (https://c4model.com/)
-- Go Language
-- Using Library https://github.com/goadesign/model
+- Go Language version 1.17
+- Using Library https://github.com/goadesign/model version 1.7.6
 
 ## Installations
 
