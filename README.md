@@ -276,13 +276,16 @@ Footer
 To start a local HTTP server that serves a graphical editor:
 
 ```sh
-mdl serve github.com/kecci/go-system-design/internal/doc -dir docs/diagrams/
+$ mdl serve github.com/kecci/go-system-design/internal/doc -dir docs/diagrams/
+
+Watching: /Users/kecci/go/src/github.com/kecci/go-system-design/internal/doc
+Editor started. Open http://localhost:8080 in your browser.
 ```
 
 To generate JSON artifact for uploading to [structurizr](https://structurizr.com/)
 
 ```sh
-mdl gen github.com/kecci/go-system-design/internal/doc -out docs/model.json
+$ mdl gen github.com/kecci/go-system-design/internal/doc -out docs/model.json
 ```
 
 ## Output
