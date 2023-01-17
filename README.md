@@ -30,6 +30,18 @@ To generate JSON artifact for uploading to [structurizr](https://structurizr.com
 mdl gen github.com/kecci/go-system-design/internal/doc -out docs/model.json
 ```
 
+## Output
+
+![image](docs/diagrams/ToDo%20System.svg)
+
+![image](docs/diagrams/Containers.svg)
+
+![image](docs/diagrams/RESTful%20API.svg)
+
+![image](docs/diagrams/CLI.svg)
+
+![image](docs/diagrams/ElasticSearch%20Indexer.svg)
+
 ## Sources
 
 - https://github.com/MarioCarrion/todo-api-microservice-example
