@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="graph" width="1512" height="2076.000030517578"><script type="application/json"><![CDATA[{
+  "name": "Containers",
+  "description": "Container diagram for the ToDo System",
+  "elements": [
+    {
+      "id": "1c1foek",
+      "tags": "Element,Database,Container"
+    },
+    {
+      "id": "1qbyk9e",
+      "tags": "Element,Person",
+      "location": "External"
+    },
+    {
+      "id": "1w93slu",
+      "tags": "Element,Container"
+    },
+    {
+      "id": "1yowx65",
+      "tags": "Element,Command Line Interface,Container"
+    },
+    {
+      "id": "61djpz",
+      "tags": "Element,Container"
+    },
+    {
+      "id": "km6zjd",
+      "tags": "Element,Database,Container"
+    },
+    {
+      "id": "ydttl7",
+      "tags": "Element,Database,Container"
+    }
+  ],
+  "layout": {
+    "1c1foek": {
+      "x": 1302.5,
+      "y": 1843.5
+    },
+    "1qbyk9e": {
+      "x": 851.5,
+      "y": 400.5
+    },
+    "1w93slu": {
+      "x": 851.5,
+      "y": 1362.5
+    },
+    "1yowx65": {
+      "x": 516,
+      "y": 881.5
+    },
+    "61djpz": {
+      "x": 1302.5,
+      "y": 1362.5
+    },
+    "km6zjd": {
+      "x": 851.5,
+      "y": 1843.5
+    },
+    "ydttl7": {
+      "x": 400.5,
+      "y": 1843.5
+    },
+    "e-1g2f61m": [
+      {
+        "x": 961.5,
+        "y": 1603,
+        "label": true
+      }
+    ],
+    "e-1tji7b1": [
+      {
+        "x": 1412.5,
+        "y": 1603,
+        "label": true
+      }
+    ],
+    "e-6p71aq": [
+      {
+        "x": 400.5,
+        "y": 1603,
+        "label": true
+      }
+    ],
+    "e-86cjth": [
+      {
+        "x": 516,
+        "y": 641,
+        "label": true
+      }
+    ],
+    "e-87fyvk": [
+      {
+        "x": 851.5,
+        "y": 641
+      },
+      {
+        "x": 851.5,
+        "y": 881.5,
+        "label": true
+      },
+      {
+        "x": 851.5,
+        "y": 1122
+      }
+    ],
+    "e-cc35y1": [
+      {
+        "x": 516,
+        "y": 1122,
+        "label": true
+      }
+    ],
+    "e-ioj02d": [
+      {
+        "x": 736,
+        "y": 1603,
+        "label": true
+      }
+    ],
+    "e-vpkdtc": [
+      {
+        "x": 1187,
+        "y": 1603,
+        "label": true
+      }
+    ]
+  }
+}]]></script>
+<defs>
+	<marker id="arrow" viewBox="0 0 5 5" refX="4" refY="2.5" markerWidth="5" markerHeight="5" orient="auto" markerUnits="strokeWidth">
+		<path fill="#aaa" stroke-width="1" stroke="none" d="M0,0 L5,2.5 L0,5 Z" class="arrowHead"></path>
+	</marker>
+	<g id="icon-circle" transform="translate(0,-12)" class="icon">
+		<circle cx="7" cy="7" r="7"></circle>
+	</g>
+	<g id="icon-cube" transform="translate(0, -14)" class="icon">
+		<path d="M 5 0 h 10 v 10 l -5 5 h -10 v -10 l 5 -5 M 0 5 h 10 v 10 M 15 0 l -5 5"></path>
+	</g>
+	<filter id="shadow">
+		<feDropShadow dx="3" dy="3" stdDeviation="5" flood-color="#00000030" flood-opacity="1"></feDropShadow>
+	</filter>
+</defs><g class="zoom" transform="scale(1)"><g class="groups"><g class="group"><rect x="225.5" y="706.5" rx="0" ry="0" width="1252" height="1349.5" fill="rgba(0, 0, 0, 0.02)" stroke="#666" stroke-width="3" stroke-dasharray="4"></rect><text x="250.5" y="2034" fill="#666" font-size="22px" cursor="default">ToDo System</text></g></g><g class="edges"><g class="edge" id="1g2f61m" data-from="1w93slu" data-to="km6zjd"><rect x="904.02734375" y="1584.5" rx="0" ry="0" width="114.9453125" height="37" fill="none" stroke="none"></rect><text x="0" y="1584.5" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" font-size="22" fill="#999" data-field="label"><tspan x="961.5" dy="24px" font-size="22px" font-weight="normal">Produces</tspan></text><path marker-end="url(#arrow)" class="edge" d="M920.1070686070686,1512.5 L953.0384615384615,1584.5 M953.0384615384615,1621.5 L919.0246932728671,1695.866466071595" fill="none" stroke="#999" stroke-width="3" stroke-linecap="round" stroke-dasharray="8"></path><circle id="v-4bvsizn" cx="961.5" cy="1603" r="7" fill="none" class="v-dot"></circle></g><g class="edge" id="1tji7b1" data-from="61djpz" data-to="1c1foek"><rect x="1358.296875" y="1584.5" rx="0" ry="0" width="108.40625" height="37" fill="none" stroke="none"></rect><text x="0" y="1584.5" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" font-size="22" fill="#999" data-field="label"><tspan x="1412.5" dy="24px" font-size="22px" font-weight="normal">Writes to</tspan></text><path marker-end="url(#arrow)" class="edge" d="M1371.1070686070686,1512.5 L1404.0384615384614,1584.5 M1404.0384615384614,1621.5 L1370.0246932728671,1695.866466071595" fill="none" stroke="#999" stroke-width="3" stroke-linecap="round" stroke-dasharray="8"></path><circle id="v-ozukcv" cx="1412.5" cy="1603" r="7" fill="none" class="v-dot"></circle></g><g class="edge" id="6p71aq" data-from="1w93slu" data-to="ydttl7"><rect x="311.234375" y="1572.5" rx="0" ry="0" width="178.53125" height="61" fill="none" stroke="none"></rect><text x="0" y="1572.5" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" font-size="22" fill="#999" data-field="label"><tspan x="400.5" dy="24px" font-size="22px" font-weight="normal">Reads from and</tspan><tspan x="400.5" dy="24px" font-size="22px" font-weight="normal">Writes to</tspan></text><path marker-end="url(#arrow)" class="edge" d="M701.5,1442.488913525499 L457.6954261954262,1572.5 M400.50000002101973,1633.5 L400.5000000623701,1693.5" fill="none" stroke="#999" stroke-width="3" stroke-linecap="round" stroke-dasharray="8"></path><circle id="v-411yfz9" cx="400.5" cy="1603" r="7" fill="none" class="v-dot"></circle></g><g class="edge" id="86cjth" data-from="1qbyk9e" data-to="1yowx65"><rect x="420.01171875" y="610.5" rx="0" ry="0" width="191.9765625" height="61" fill="none" stroke="none"></rect><text x="0" y="610.5" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" font-size="22" fill="#999" data-field="label"><tspan x="516" dy="24px" font-size="22px" font-weight="normal">Reads and writes</tspan><tspan x="516" dy="24px" font-size="22px" font-weight="normal">tasks using</tspan></text><path marker-end="url(#arrow)" class="edge" d="M701.5,508.0260804769001 L558.547817047817,610.5 M516,671.5 L516,731.5" fill="none" stroke="#999" stroke-width="3" stroke-linecap="round" stroke-dasharray="8"></path><circle id="v-48mh37i" cx="516" cy="641" r="7" fill="none" class="v-dot"></circle></g><g class="edge" id="87fyvk" data-from="1qbyk9e" data-to="1w93slu"><rect x="755.51171875" y="851" rx="0" ry="0" width="191.9765625" height="61" fill="none" stroke="none"></rect><text x="0" y="851" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" font-size="22" fill="#999" data-field="label"><tspan x="851.5" dy="24px" font-size="22px" font-weight="normal">Reads and writes</tspan><tspan x="851.5" dy="24px" font-size="22px" font-weight="normal">tasks using</tspan></text><path marker-end="url(#arrow)" class="edge" d="M851.5,550.5 L851.5,641 M851.5,641 L851.5,851 M851.5,912 L851.5,1122 M851.5,1122 L851.5,1212.5" fill="none" stroke="#999" stroke-width="3" stroke-linecap="round" stroke-dasharray="8"></path><circle id="v-3yi3b0e" cx="851.5" cy="641" r="7" fill="none" class="v-dot"></circle><circle id="v-37qzd" cx="851.5" cy="881.5" r="7" fill="none" class="v-dot"></circle><circle id="v-aktygw" cx="851.5" cy="1122" r="7" fill="none" class="v-dot"></circle></g><g class="edge" id="cc35y1" data-from="1yowx65" data-to="1w93slu"><rect x="479.9375" y="1103.5" rx="0" ry="0" width="72.125" height="37" fill="none" stroke="none"></rect><text x="0" y="1103.5" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" font-size="22" fill="#999" data-field="label"><tspan x="516" dy="24px" font-size="22px" font-weight="normal">Uses</tspan></text><path marker-end="url(#arrow)" class="edge" d="M516,1031.5 L516,1103.5 M541.8076923076924,1140.5 L701.5,1254.9739195230998" fill="none" stroke="#999" stroke-width="3" stroke-linecap="round" stroke-dasharray="8"></path><circle id="v-4ky42s4" cx="516" cy="1122" r="7" fill="none" class="v-dot"></circle></g><g class="edge" id="ioj02d" data-from="61djpz" data-to="km6zjd"><rect x="672.421875" y="1584.5" rx="0" ry="0" width="127.15625" height="37" fill="none" stroke="none"></rect><text x="0" y="1584.5" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" font-size="22" fill="#999" data-field="label"><tspan x="736" dy="24px" font-size="22px" font-weight="normal">Consumes</tspan></text><path marker-end="url(#arrow)" class="edge" d="M1152.5,1426.1804942630185 L779.5769230769231,1584.5 M744.8846153846154,1621.5 L780.7188196629156,1696.1158106400972" fill="none" stroke="#999" stroke-width="3" stroke-linecap="round" stroke-dasharray="8"></path><circle id="v-1gky8e8" cx="736" cy="1603" r="7" fill="none" class="v-dot"></circle></g><g class="edge" id="vpkdtc" data-from="1w93slu" data-to="1c1foek"><rect x="1119.14453125" y="1584.5" rx="0" ry="0" width="135.7109375" height="37" fill="none" stroke="none"></rect><text x="0" y="1584.5" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" font-size="22" fill="#999" data-field="label"><tspan x="1187" dy="24px" font-size="22px" font-weight="normal">Reads from</tspan></text><path marker-end="url(#arrow)" class="edge" d="M1001.5,1470.0260804769002 L1161.1923076923076,1584.5 M1195.8846153846155,1621.5 L1231.7188196629156,1696.1158106400972" fill="none" stroke="#999" stroke-width="3" stroke-linecap="round" stroke-dasharray="8"></path><circle id="v-487gdz3" cx="1187" cy="1603" r="7" fill="none" class="v-dot"></circle></g></g><g class="nodes"><g class="node" id="1c1foek" transform="translate(1302.5,1843.5)" label-offset-y="44.21052631578947"><path d="M 0,22.105263157894736 a150,22.105263157894736 0,0,0 300 0 a 150,22.105263157894736 0,0,0 -300 0 l 0,255.78947368421052 a 150,22.105263157894736 0,0,0 300 0 l 0,-255.78947368421052" transform="translate(-150,-150)" class="nodeBorder" fill="#438dd5" stroke="#999" filter="url(#shadow)" stroke-width="4.3" opacity="0.9"></path><g transform="translate(0,-92.10526315789474)"><text x="0" y="44.21052631578947" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" fill="#ffffff" data-field="name"><tspan x="0" dy="24px" font-size="22px" font-weight="bold">ElasticSearch</tspan></text><text x="0" y="92.21052631578948" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" fill="#ffffff" font-size="16.5">[Container: ElasticSearch 7.x]</text><text x="0" y="112.21052631578948" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" fill="#ffffff" data-field="description"><tspan x="0" dy="24px" font-size="22px" font-weight="normal">Stores searchable Task</tspan><tspan x="0" dy="24px" font-size="22px" font-weight="normal">records</tspan></text></g></g><g class="node" id="1qbyk9e" transform="translate(851.5,400.5)" label-offset-y="120"><path d="M 114,100 A150,150 0,0,0 0 150
+		L27.272727272727273,300 L272.72727272727275,300 L300,150
+		A150,150 0,0,0 186 100 
+		A50,50 0,1,0 114 100" transform="translate(-150,-150)" class="nodeBorder" fill="#08427b" stroke="#999" filter="url(#shadow)" stroke-width="4.3" opacity="0.9"></path><g transform="translate(0,-118)"><text x="0" y="120" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" fill="#ffffff" data-field="name"><tspan x="0" dy="24px" font-size="22px" font-weight="bold">User</tspan></text><text x="0" y="168" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" fill="#ffffff" font-size="16.5">[Person]</text><text x="0" y="188" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" fill="#ffffff" data-field="description"><tspan x="0" dy="24px" font-size="22px" font-weight="normal">Interacts with Service</tspan></text></g></g><g class="node" id="1w93slu" transform="translate(851.5,1362.5)"><rect rx="3" ry="3" x="-150" y="-150" width="300" height="300" class="nodeBorder" fill="#438dd5" stroke="#999" filter="url(#shadow)" stroke-width="4.3" opacity="0.9"></rect><g transform="translate(0,-58)"><text x="0" y="0" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" fill="#ffffff" data-field="name"><tspan x="0" dy="24px" font-size="22px" font-weight="bold">RESTful API</tspan></text><text x="0" y="48" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" fill="#ffffff" font-size="16.5">[Container: Go 1.16]</text><text x="0" y="68" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" fill="#ffffff" data-field="description"><tspan x="0" dy="24px" font-size="22px" font-weight="normal">RESTful API</tspan></text></g></g><g class="node" id="1yowx65" transform="translate(516,881.5)"><rect rx="37.5" ry="37.5" x="-150" y="-150" width="300" height="300" class="nodeBorder" fill="#438dd5" stroke="#999" filter="url(#shadow)" stroke-width="4.3" opacity="0.9"></rect><g transform="translate(0,-58)"><text x="0" y="0" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" fill="#ffffff" data-field="name"><tspan x="0" dy="24px" font-size="22px" font-weight="bold">CLI Tool</tspan></text><text x="0" y="48" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" fill="#ffffff" font-size="16.5">[Container: Go Binary]</text><text x="0" y="68" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" fill="#ffffff" data-field="description"><tspan x="0" dy="24px" font-size="22px" font-weight="normal">CLI Tool</tspan></text></g></g><g class="node" id="61djpz" transform="translate(1302.5,1362.5)"><rect rx="3" ry="3" x="-150" y="-150" width="300" height="300" class="nodeBorder" fill="#438dd5" stroke="#999" filter="url(#shadow)" stroke-width="4.3" opacity="0.9"></rect><g transform="translate(0,-58)"><text x="0" y="0" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" fill="#ffffff" data-field="name"><tspan x="0" dy="24px" font-size="22px" font-weight="bold">ElasticSearch Indexer</tspan></text><text x="0" y="48" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" fill="#ffffff" font-size="16.5">[Container: Go Binary]</text><text x="0" y="68" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" fill="#ffffff" data-field="description"><tspan x="0" dy="24px" font-size="22px" font-weight="normal">Updates searchable tasks</tspan></text></g></g><g class="node" id="km6zjd" transform="translate(851.5,1843.5)" label-offset-y="44.21052631578947"><path d="M 0,22.105263157894736 a150,22.105263157894736 0,0,0 300 0 a 150,22.105263157894736 0,0,0 -300 0 l 0,255.78947368421052 a 150,22.105263157894736 0,0,0 300 0 l 0,-255.78947368421052" transform="translate(-150,-150)" class="nodeBorder" fill="#438dd5" stroke="#999" filter="url(#shadow)" stroke-width="4.3" opacity="0.9"></path><g transform="translate(0,-80.10526315789474)"><text x="0" y="44.21052631578947" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" fill="#ffffff" data-field="name"><tspan x="0" dy="24px" font-size="22px" font-weight="bold">Kafka</tspan></text><text x="0" y="92.21052631578948" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" fill="#ffffff" font-size="16.5">[Container: Kafka 2.13]</text><text x="0" y="112.21052631578948" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" fill="#ffffff" data-field="description"><tspan x="0" dy="24px" font-size="22px" font-weight="normal">Streams Task events</tspan></text></g></g><g class="node" id="ydttl7" transform="translate(400.5,1843.5)" label-offset-y="44.21052631578947"><path d="M 0,22.105263157894736 a150,22.105263157894736 0,0,0 300 0 a 150,22.105263157894736 0,0,0 -300 0 l 0,255.78947368421052 a 150,22.105263157894736 0,0,0 300 0 l 0,-255.78947368421052" transform="translate(-150,-150)" class="nodeBorder" fill="#438dd5" stroke="#999" filter="url(#shadow)" stroke-width="4.3" opacity="0.9"></path><g transform="translate(0,-80.10526315789474)"><text x="0" y="44.21052631578947" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" fill="#ffffff" data-field="name"><tspan x="0" dy="24px" font-size="22px" font-weight="bold">PostgreSQL</tspan></text><text x="0" y="92.21052631578948" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" fill="#ffffff" font-size="16.5">[Container: PosgreSQL 12.5]</text><text x="0" y="112.21052631578948" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" fill="#ffffff" data-field="description"><tspan x="0" dy="24px" font-size="22px" font-weight="normal">Stores Tasks records</tspan></text></g></g></g></g></svg>

@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="graph" width="1512" height="2494.5"><script type="application/json"><![CDATA[{
+  "name": "RESTful API",
+  "description": "Component diagram for the REST Server",
+  "elements": [
+    {
+      "id": "1c1foek",
+      "tags": "Element,Database,Container"
+    },
+    {
+      "id": "1djs5vw",
+      "tags": "Element,Component"
+    },
+    {
+      "id": "1yowx65",
+      "tags": "Element,Command Line Interface,Container"
+    },
+    {
+      "id": "a6awuc",
+      "tags": "Element,Component"
+    },
+    {
+      "id": "jtnjex",
+      "tags": "Element,Component"
+    },
+    {
+      "id": "km6zjd",
+      "tags": "Element,Database,Container"
+    },
+    {
+      "id": "s37ja4",
+      "tags": "Element,Component"
+    },
+    {
+      "id": "tdbwl",
+      "tags": "Element,Component"
+    },
+    {
+      "id": "ydttl7",
+      "tags": "Element,Database,Container"
+    }
+  ],
+  "layout": {
+    "1c1foek": {
+      "x": 1302.5,
+      "y": 2324.5
+    },
+    "1djs5vw": {
+      "x": 851.5,
+      "y": 881.5
+    },
+    "1yowx65": {
+      "x": 851.5,
+      "y": 400.5
+    },
+    "a6awuc": {
+      "x": 851.5,
+      "y": 1843.5
+    },
+    "jtnjex": {
+      "x": 1302.5,
+      "y": 1843.5
+    },
+    "km6zjd": {
+      "x": 851.5,
+      "y": 2324.5
+    },
+    "s37ja4": {
+      "x": 400.5,
+      "y": 1843.5
+    },
+    "tdbwl": {
+      "x": 851.5,
+      "y": 1362.5
+    },
+    "ydttl7": {
+      "x": 400.5,
+      "y": 2324.5
+    },
+    "e-16q3q9m": [
+      {
+        "x": 1302.5,
+        "y": 2084,
+        "label": true
+      }
+    ],
+    "e-1b4rih3": [
+      {
+        "x": 400.5,
+        "y": 1603,
+        "label": true
+      }
+    ],
+    "e-1vurlwd": [
+      {
+        "x": 851.5,
+        "y": 1603,
+        "label": true
+      }
+    ],
+    "e-9xszcx": [
+      {
+        "x": 851.5,
+        "y": 1122,
+        "label": true
+      }
+    ],
+    "e-bjyiv3": [
+      {
+        "x": 400.5,
+        "y": 2084,
+        "label": true
+      }
+    ],
+    "e-n9jhxw": [
+      {
+        "x": 851.5,
+        "y": 2084,
+        "label": true
+      }
+    ],
+    "e-okfz4b": [
+      {
+        "x": 1302.5,
+        "y": 1603,
+        "label": true
+      }
+    ],
+    "e-zmmhk7": [
+      {
+        "x": 851.5,
+        "y": 641,
+        "label": true
+      }
+    ]
+  }
+}]]></script>
+<defs>
+	<marker id="arrow" viewBox="0 0 5 5" refX="4" refY="2.5" markerWidth="5" markerHeight="5" orient="auto" markerUnits="strokeWidth">
+		<path fill="#aaa" stroke-width="1" stroke="none" d="M0,0 L5,2.5 L0,5 Z" class="arrowHead"></path>
+	</marker>
+	<g id="icon-circle" transform="translate(0,-12)" class="icon">
+		<circle cx="7" cy="7" r="7"></circle>
+	</g>
+	<g id="icon-cube" transform="translate(0, -14)" class="icon">
+		<path d="M 5 0 h 10 v 10 l -5 5 h -10 v -10 l 5 -5 M 0 5 h 10 v 10 M 15 0 l -5 5"></path>
+	</g>
+	<filter id="shadow">
+		<feDropShadow dx="3" dy="3" stdDeviation="5" flood-color="#00000030" flood-opacity="1"></feDropShadow>
+	</filter>
+</defs><g class="zoom" transform="scale(1)"><g class="groups"></g><g class="edges"><g class="edge" id="16q3q9m" data-from="jtnjex" data-to="1c1foek"><rect x="1266.4375" y="2065.5" rx="0" ry="0" width="72.125" height="37" fill="none" stroke="none"></rect><text x="0" y="2065.5" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" font-size="22" fill="#999" data-field="label"><tspan x="1302.5" dy="24px" font-size="22px" font-weight="normal">Uses</tspan></text><path marker-end="url(#arrow)" class="edge" d="M1302.5,1993.5 L1302.5,2065.5 M1302.5000000127498,2102.5 L1302.50000006237,2174.5" fill="none" stroke="#999" stroke-width="3" stroke-linecap="round" stroke-dasharray="8"></path><circle id="v-1sydx37" cx="1302.5" cy="2084" r="7" fill="none" class="v-dot"></circle></g><g class="edge" id="1b4rih3" data-from="tdbwl" data-to="s37ja4"><rect x="364.4375" y="1584.5" rx="0" ry="0" width="72.125" height="37" fill="none" stroke="none"></rect><text x="0" y="1584.5" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" font-size="22" fill="#999" data-field="label"><tspan x="400.5" dy="24px" font-size="22px" font-weight="normal">Uses</tspan></text><path marker-end="url(#arrow)" class="edge" d="M701.5,1442.488913525499 L435.1923076923077,1584.5 M400.5,1621.5 L400.5,1693.5" fill="none" stroke="#999" stroke-width="3" stroke-linecap="round" stroke-dasharray="8"></path><circle id="v-4ejhjap" cx="400.5" cy="1603" r="7" fill="none" class="v-dot"></circle></g><g class="edge" id="1vurlwd" data-from="tdbwl" data-to="a6awuc"><rect x="751.83203125" y="1584.5" rx="0" ry="0" width="199.3359375" height="37" fill="none" stroke="none"></rect><text x="0" y="1584.5" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" font-size="22" fill="#999" data-field="label"><tspan x="851.5" dy="24px" font-size="22px" font-weight="normal">Produce events to</tspan></text><path marker-end="url(#arrow)" class="edge" d="M851.5,1512.5 L851.5,1584.5 M851.5,1621.5 L851.5,1693.5" fill="none" stroke="#999" stroke-width="3" stroke-linecap="round" stroke-dasharray="8"></path><circle id="v-2h7n50z" cx="851.5" cy="1603" r="7" fill="none" class="v-dot"></circle></g><g class="edge" id="9xszcx" data-from="1djs5vw" data-to="tdbwl"><rect x="815.4375" y="1103.5" rx="0" ry="0" width="72.125" height="37" fill="none" stroke="none"></rect><text x="0" y="1103.5" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" font-size="22" fill="#999" data-field="label"><tspan x="851.5" dy="24px" font-size="22px" font-weight="normal">Uses</tspan></text><path marker-end="url(#arrow)" class="edge" d="M851.5,1031.5 L851.5,1103.5 M851.5,1140.5 L851.5,1212.5" fill="none" stroke="#999" stroke-width="3" stroke-linecap="round" stroke-dasharray="8"></path><circle id="v-3ce45nn" cx="851.5" cy="1122" r="7" fill="none" class="v-dot"></circle></g><g class="edge" id="bjyiv3" data-from="s37ja4" data-to="ydttl7"><rect x="364.4375" y="2065.5" rx="0" ry="0" width="72.125" height="37" fill="none" stroke="none"></rect><text x="0" y="2065.5" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" font-size="22" fill="#999" data-field="label"><tspan x="400.5" dy="24px" font-size="22px" font-weight="normal">Uses</tspan></text><path marker-end="url(#arrow)" class="edge" d="M400.5,1993.5 L400.5,2065.5 M400.5000000127497,2102.5 L400.5000000623701,2174.5" fill="none" stroke="#999" stroke-width="3" stroke-linecap="round" stroke-dasharray="8"></path><circle id="v-45m07xk" cx="400.5" cy="2084" r="7" fill="none" class="v-dot"></circle></g><g class="edge" id="n9jhxw" data-from="a6awuc" data-to="km6zjd"><rect x="815.4375" y="2065.5" rx="0" ry="0" width="72.125" height="37" fill="none" stroke="none"></rect><text x="0" y="2065.5" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" font-size="22" fill="#999" data-field="label"><tspan x="851.5" dy="24px" font-size="22px" font-weight="normal">Uses</tspan></text><path marker-end="url(#arrow)" class="edge" d="M851.5,1993.5 L851.5,2065.5 M851.5000000127496,2102.5 L851.5000000623701,2174.5" fill="none" stroke="#999" stroke-width="3" stroke-linecap="round" stroke-dasharray="8"></path><circle id="v-2iqdyiu" cx="851.5" cy="2084" r="7" fill="none" class="v-dot"></circle></g><g class="edge" id="okfz4b" data-from="tdbwl" data-to="jtnjex"><rect x="1194.91015625" y="1584.5" rx="0" ry="0" width="215.1796875" height="37" fill="none" stroke="none"></rect><text x="0" y="1584.5" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" font-size="22" fill="#999" data-field="label"><tspan x="1302.5" dy="24px" font-size="22px" font-weight="normal">Reads records from</tspan></text><path marker-end="url(#arrow)" class="edge" d="M1001.5,1442.488913525499 L1267.8076923076924,1584.5 M1302.5,1621.5 L1302.5,1693.5" fill="none" stroke="#999" stroke-width="3" stroke-linecap="round" stroke-dasharray="8"></path><circle id="v-15v3x39" cx="1302.5" cy="1603" r="7" fill="none" class="v-dot"></circle></g><g class="edge" id="zmmhk7" data-from="1yowx65" data-to="1djs5vw"><rect x="755.51171875" y="610.5" rx="0" ry="0" width="191.9765625" height="61" fill="none" stroke="none"></rect><text x="0" y="610.5" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" font-size="22" fill="#999" data-field="label"><tspan x="851.5" dy="24px" font-size="22px" font-weight="normal">Reads and writes</tspan><tspan x="851.5" dy="24px" font-size="22px" font-weight="normal">tasks using</tspan></text><path marker-end="url(#arrow)" class="edge" d="M851.5,550.5 L851.5,610.5 M851.5,671.5 L851.5,731.5" fill="none" stroke="#999" stroke-width="3" stroke-linecap="round" stroke-dasharray="8"></path><circle id="v-49752mu" cx="851.5" cy="641" r="7" fill="none" class="v-dot"></circle></g></g><g class="nodes"><g class="node" id="1c1foek" transform="translate(1302.5,2324.5)" label-offset-y="44.21052631578947"><path d="M 0,22.105263157894736 a150,22.105263157894736 0,0,0 300 0 a 150,22.105263157894736 0,0,0 -300 0 l 0,255.78947368421052 a 150,22.105263157894736 0,0,0 300 0 l 0,-255.78947368421052" transform="translate(-150,-150)" class="nodeBorder" fill="#438dd5" stroke="#999" filter="url(#shadow)" stroke-width="4.3" opacity="0.9"></path><g transform="translate(0,-92.10526315789474)"><text x="0" y="44.21052631578947" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" fill="#ffffff" data-field="name"><tspan x="0" dy="24px" font-size="22px" font-weight="bold">ElasticSearch</tspan></text><text x="0" y="92.21052631578948" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" fill="#ffffff" font-size="16.5">[Container: ElasticSearch 7.x]</text><text x="0" y="112.21052631578948" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" fill="#ffffff" data-field="description"><tspan x="0" dy="24px" font-size="22px" font-weight="normal">Stores searchable Task</tspan><tspan x="0" dy="24px" font-size="22px" font-weight="normal">records</tspan></text></g></g><g class="node" id="1djs5vw" transform="translate(851.5,881.5)"><rect rx="3" ry="3" x="-150" y="-150" width="300" height="300" class="nodeBorder" fill="#85bbf0" stroke="#999" filter="url(#shadow)" stroke-width="4.3" opacity="0.9"></rect><g transform="translate(0,-58)"><text x="0" y="0" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" fill="#000000" data-field="name"><tspan x="0" dy="24px" font-size="22px" font-weight="bold">internal.rest</tspan></text><text x="0" y="48" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" fill="#000000" font-size="16.5">[Component: Go Package]</text><text x="0" y="68" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" fill="#000000" data-field="description"><tspan x="0" dy="24px" font-size="22px" font-weight="normal">defines HTTP handlers</tspan></text></g></g><g class="node" id="1yowx65" transform="translate(851.5,400.5)"><rect rx="37.5" ry="37.5" x="-150" y="-150" width="300" height="300" class="nodeBorder" fill="#438dd5" stroke="#999" filter="url(#shadow)" stroke-width="4.3" opacity="0.9"></rect><g transform="translate(0,-58)"><text x="0" y="0" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" fill="#ffffff" data-field="name"><tspan x="0" dy="24px" font-size="22px" font-weight="bold">CLI Tool</tspan></text><text x="0" y="48" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" fill="#ffffff" font-size="16.5">[Container: Go Binary]</text><text x="0" y="68" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" fill="#ffffff" data-field="description"><tspan x="0" dy="24px" font-size="22px" font-weight="normal">CLI Tool</tspan></text></g></g><g class="node" id="a6awuc" transform="translate(851.5,1843.5)"><rect rx="3" ry="3" x="-150" y="-150" width="300" height="300" class="nodeBorder" fill="#85bbf0" stroke="#999" filter="url(#shadow)" stroke-width="4.3" opacity="0.9"></rect><g transform="translate(0,-58)"><text x="0" y="0" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" fill="#000000" data-field="name"><tspan x="0" dy="24px" font-size="22px" font-weight="bold">internal.kafka</tspan></text><text x="0" y="48" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" fill="#000000" font-size="16.5">[Component: Go Package]</text><text x="0" y="68" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" fill="#000000" data-field="description"><tspan x="0" dy="24px" font-size="22px" font-weight="normal">interacts with Kafka</tspan></text></g></g><g class="node" id="jtnjex" transform="translate(1302.5,1843.5)"><rect rx="3" ry="3" x="-150" y="-150" width="300" height="300" class="nodeBorder" fill="#85bbf0" stroke="#999" filter="url(#shadow)" stroke-width="4.3" opacity="0.9"></rect><g transform="translate(0,-70)"><text x="0" y="0" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" fill="#000000" data-field="name"><tspan x="0" dy="24px" font-size="22px" font-weight="bold">internal.elasticsearch</tspan></text><text x="0" y="48" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" fill="#000000" font-size="16.5">[Component: Go Package]</text><text x="0" y="68" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" fill="#000000" data-field="description"><tspan x="0" dy="24px" font-size="22px" font-weight="normal">interacts with</tspan><tspan x="0" dy="24px" font-size="22px" font-weight="normal">ElasticSearch</tspan></text></g></g><g class="node" id="km6zjd" transform="translate(851.5,2324.5)" label-offset-y="44.21052631578947"><path d="M 0,22.105263157894736 a150,22.105263157894736 0,0,0 300 0 a 150,22.105263157894736 0,0,0 -300 0 l 0,255.78947368421052 a 150,22.105263157894736 0,0,0 300 0 l 0,-255.78947368421052" transform="translate(-150,-150)" class="nodeBorder" fill="#438dd5" stroke="#999" filter="url(#shadow)" stroke-width="4.3" opacity="0.9"></path><g transform="translate(0,-80.10526315789474)"><text x="0" y="44.21052631578947" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" fill="#ffffff" data-field="name"><tspan x="0" dy="24px" font-size="22px" font-weight="bold">Kafka</tspan></text><text x="0" y="92.21052631578948" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" fill="#ffffff" font-size="16.5">[Container: Kafka 2.13]</text><text x="0" y="112.21052631578948" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" fill="#ffffff" data-field="description"><tspan x="0" dy="24px" font-size="22px" font-weight="normal">Streams Task events</tspan></text></g></g><g class="node" id="s37ja4" transform="translate(400.5,1843.5)"><rect rx="3" ry="3" x="-150" y="-150" width="300" height="300" class="nodeBorder" fill="#85bbf0" stroke="#999" filter="url(#shadow)" stroke-width="4.3" opacity="0.9"></rect><g transform="translate(0,-58)"><text x="0" y="0" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" fill="#000000" data-field="name"><tspan x="0" dy="24px" font-size="22px" font-weight="bold">internal.postgresql</tspan></text><text x="0" y="48" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" fill="#000000" font-size="16.5">[Component: Go Package]</text><text x="0" y="68" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" fill="#000000" data-field="description"><tspan x="0" dy="24px" font-size="22px" font-weight="normal">interacts with PostgreSQL</tspan></text></g></g><g class="node" id="tdbwl" transform="translate(851.5,1362.5)"><rect rx="3" ry="3" x="-150" y="-150" width="300" height="300" class="nodeBorder" fill="#85bbf0" stroke="#999" filter="url(#shadow)" stroke-width="4.3" opacity="0.9"></rect><g transform="translate(0,-70)"><text x="0" y="0" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" fill="#000000" data-field="name"><tspan x="0" dy="24px" font-size="22px" font-weight="bold">internal.service</tspan></text><text x="0" y="48" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" fill="#000000" font-size="16.5">[Component: Go Package]</text><text x="0" y="68" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" fill="#000000" data-field="description"><tspan x="0" dy="24px" font-size="22px" font-weight="normal">interacts with all</tspan><tspan x="0" dy="24px" font-size="22px" font-weight="normal">datastores</tspan></text></g></g><g class="node" id="ydttl7" transform="translate(400.5,2324.5)" label-offset-y="44.21052631578947"><path d="M 0,22.105263157894736 a150,22.105263157894736 0,0,0 300 0 a 150,22.105263157894736 0,0,0 -300 0 l 0,255.78947368421052 a 150,22.105263157894736 0,0,0 300 0 l 0,-255.78947368421052" transform="translate(-150,-150)" class="nodeBorder" fill="#438dd5" stroke="#999" filter="url(#shadow)" stroke-width="4.3" opacity="0.9"></path><g transform="translate(0,-80.10526315789474)"><text x="0" y="44.21052631578947" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" fill="#ffffff" data-field="name"><tspan x="0" dy="24px" font-size="22px" font-weight="bold">PostgreSQL</tspan></text><text x="0" y="92.21052631578948" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" fill="#ffffff" font-size="16.5">[Container: PosgreSQL 12.5]</text><text x="0" y="112.21052631578948" text-anchor="middle" font-family="Arial, sans-serif" stroke="none" fill="#ffffff" data-field="description"><tspan x="0" dy="24px" font-size="22px" font-weight="normal">Stores Tasks records</tspan></text></g></g></g></g></svg>

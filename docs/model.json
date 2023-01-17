@@ -1,0 +1,573 @@
+{
+    "name": "ToDo API Microservice Example",
+    "description": "Go microservice tutorial project using Domain Driven Design and Hexagonal Architecture!",
+    "model": {
+        "people": [
+            {
+                "id": "1qbyk9e",
+                "name": "User",
+                "description": "Interacts with Service",
+                "tags": "Element,Person",
+                "relationships": [
+                    {
+                        "id": "1pujjwe",
+                        "description": "Reads and writes tasks using",
+                        "tags": "Relationship,Relationship,Synchronous",
+                        "sourceId": "1qbyk9e",
+                        "destinationId": "19n71qe",
+                        "technology": "HTTPS/JSON",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "86cjth",
+                        "description": "Reads and writes tasks using",
+                        "tags": "Relationship,Relationship,Synchronous",
+                        "sourceId": "1qbyk9e",
+                        "destinationId": "1yowx65",
+                        "technology": "Go 1.16",
+                        "interactionStyle": "Synchronous"
+                    },
+                    {
+                        "id": "87fyvk",
+                        "description": "Reads and writes tasks using",
+                        "tags": "Relationship,Relationship,Synchronous",
+                        "sourceId": "1qbyk9e",
+                        "destinationId": "1w93slu",
+                        "technology": "HTTPS/JSON",
+                        "interactionStyle": "Synchronous"
+                    }
+                ],
+                "location": "External"
+            }
+        ],
+        "softwareSystems": [
+            {
+                "id": "19n71qe",
+                "name": "ToDo System",
+                "description": "Allows users to interact with their ToDo Tasks",
+                "tags": "Element,Software System",
+                "url": "https://github.com/MarioCarrion/todo-api-microservice-example",
+                "containers": [
+                    {
+                        "id": "1yowx65",
+                        "name": "CLI Tool",
+                        "description": "CLI Tool",
+                        "technology": "Go Binary",
+                        "tags": "Element,Command Line Interface,Container",
+                        "relationships": [
+                            {
+                                "id": "cc35y1",
+                                "description": "Uses",
+                                "tags": "Relationship,",
+                                "sourceId": "1yowx65",
+                                "destinationId": "1w93slu",
+                                "technology": "HTTPS/JSON",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "zmmhk7",
+                                "description": "Reads and writes tasks using",
+                                "tags": "Relationship,Relationship,Synchronous",
+                                "sourceId": "1yowx65",
+                                "destinationId": "1djs5vw",
+                                "technology": "HTTPS/JSON",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "components": [
+                            {
+                                "id": "nd2bu1",
+                                "name": "internal.cli",
+                                "description": "defines HTTP handlers",
+                                "technology": "Go Package",
+                                "tags": "Element,Component",
+                                "relationships": [
+                                    {
+                                        "id": "1iowpht",
+                                        "description": "Uses",
+                                        "tags": "Relationship,Relationship,Synchronous",
+                                        "sourceId": "nd2bu1",
+                                        "destinationId": "xzxetg",
+                                        "interactionStyle": "Synchronous"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "xzxetg",
+                                "name": "internal.service",
+                                "description": "interacts with all datastores",
+                                "technology": "Go Package",
+                                "tags": "Element,Component"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "1c1foek",
+                        "name": "ElasticSearch",
+                        "description": "Stores searchable Task records",
+                        "technology": "ElasticSearch 7.x",
+                        "tags": "Element,Database,Container"
+                    },
+                    {
+                        "id": "61djpz",
+                        "name": "ElasticSearch Indexer",
+                        "description": "Updates searchable tasks",
+                        "technology": "Go Binary",
+                        "tags": "Element,Container",
+                        "relationships": [
+                            {
+                                "id": "1tji7b1",
+                                "description": "Writes to",
+                                "tags": "Relationship,",
+                                "sourceId": "61djpz",
+                                "destinationId": "1c1foek",
+                                "technology": "HTTPS",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "ioj02d",
+                                "description": "Consumes",
+                                "tags": "Relationship,",
+                                "sourceId": "61djpz",
+                                "destinationId": "km6zjd",
+                                "technology": "Kafka",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "components": [
+                            {
+                                "id": "5roj5e",
+                                "name": "internal.elasticsearch",
+                                "description": "interacts with ElasticSearch",
+                                "technology": "Go Binary",
+                                "tags": "Element,Component",
+                                "relationships": [
+                                    {
+                                        "id": "10uxia2",
+                                        "description": "Writes records to",
+                                        "tags": "Relationship,Relationship,Synchronous",
+                                        "sourceId": "5roj5e",
+                                        "destinationId": "1c1foek",
+                                        "interactionStyle": "Synchronous"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "d247gf",
+                                "name": "internal.kafka",
+                                "description": "interacts with Kafka",
+                                "technology": "Go 1.16",
+                                "tags": "Element,Component",
+                                "relationships": [
+                                    {
+                                        "id": "157m6vt",
+                                        "description": "Consumes events from",
+                                        "tags": "Relationship,Asynchronous,Relationship,Asynchronous",
+                                        "sourceId": "d247gf",
+                                        "destinationId": "km6zjd",
+                                        "interactionStyle": "Asynchronous"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "km6zjd",
+                        "name": "Kafka",
+                        "description": "Streams Task events",
+                        "technology": "Kafka 2.13",
+                        "tags": "Element,Database,Container"
+                    },
+                    {
+                        "id": "ydttl7",
+                        "name": "PostgreSQL",
+                        "description": "Stores Tasks records",
+                        "technology": "PosgreSQL 12.5",
+                        "tags": "Element,Database,Container"
+                    },
+                    {
+                        "id": "1w93slu",
+                        "name": "RESTful API",
+                        "description": "RESTful API",
+                        "technology": "Go 1.16",
+                        "tags": "Element,Container",
+                        "relationships": [
+                            {
+                                "id": "1g2f61m",
+                                "description": "Produces",
+                                "tags": "Relationship,Asynchronous,",
+                                "sourceId": "1w93slu",
+                                "destinationId": "km6zjd",
+                                "technology": "Kafka",
+                                "interactionStyle": "Asynchronous"
+                            },
+                            {
+                                "id": "6p71aq",
+                                "description": "Reads from and Writes to",
+                                "tags": "Relationship,",
+                                "sourceId": "1w93slu",
+                                "destinationId": "ydttl7",
+                                "technology": "SQL",
+                                "interactionStyle": "Synchronous"
+                            },
+                            {
+                                "id": "vpkdtc",
+                                "description": "Reads from",
+                                "tags": "Relationship,",
+                                "sourceId": "1w93slu",
+                                "destinationId": "1c1foek",
+                                "technology": "HTTPS",
+                                "interactionStyle": "Synchronous"
+                            }
+                        ],
+                        "components": [
+                            {
+                                "id": "jtnjex",
+                                "name": "internal.elasticsearch",
+                                "description": "interacts with ElasticSearch",
+                                "technology": "Go Package",
+                                "tags": "Element,Component",
+                                "relationships": [
+                                    {
+                                        "id": "16q3q9m",
+                                        "description": "Uses",
+                                        "tags": "Relationship,Relationship,Synchronous",
+                                        "sourceId": "jtnjex",
+                                        "destinationId": "1c1foek",
+                                        "interactionStyle": "Synchronous"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "a6awuc",
+                                "name": "internal.kafka",
+                                "description": "interacts with Kafka",
+                                "technology": "Go Package",
+                                "tags": "Element,Component",
+                                "relationships": [
+                                    {
+                                        "id": "n9jhxw",
+                                        "description": "Uses",
+                                        "tags": "Relationship,Asynchronous,Relationship,Asynchronous",
+                                        "sourceId": "a6awuc",
+                                        "destinationId": "km6zjd",
+                                        "interactionStyle": "Asynchronous"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "s37ja4",
+                                "name": "internal.postgresql",
+                                "description": "interacts with PostgreSQL",
+                                "technology": "Go Package",
+                                "tags": "Element,Component",
+                                "relationships": [
+                                    {
+                                        "id": "bjyiv3",
+                                        "description": "Uses",
+                                        "tags": "Relationship,Relationship,Synchronous",
+                                        "sourceId": "s37ja4",
+                                        "destinationId": "ydttl7",
+                                        "interactionStyle": "Synchronous"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "1djs5vw",
+                                "name": "internal.rest",
+                                "description": "defines HTTP handlers",
+                                "technology": "Go Package",
+                                "tags": "Element,Component",
+                                "relationships": [
+                                    {
+                                        "id": "9xszcx",
+                                        "description": "Uses",
+                                        "tags": "Relationship,Relationship,Synchronous",
+                                        "sourceId": "1djs5vw",
+                                        "destinationId": "tdbwl",
+                                        "interactionStyle": "Synchronous"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "tdbwl",
+                                "name": "internal.service",
+                                "description": "interacts with all datastores",
+                                "technology": "Go Package",
+                                "tags": "Element,Component",
+                                "relationships": [
+                                    {
+                                        "id": "1b4rih3",
+                                        "description": "Uses",
+                                        "tags": "Relationship,Relationship,Synchronous",
+                                        "sourceId": "tdbwl",
+                                        "destinationId": "s37ja4",
+                                        "interactionStyle": "Synchronous"
+                                    },
+                                    {
+                                        "id": "1vurlwd",
+                                        "description": "Produce events to",
+                                        "tags": "Relationship,Relationship,Synchronous",
+                                        "sourceId": "tdbwl",
+                                        "destinationId": "a6awuc",
+                                        "interactionStyle": "Synchronous"
+                                    },
+                                    {
+                                        "id": "okfz4b",
+                                        "description": "Reads records from",
+                                        "tags": "Relationship,Relationship,Synchronous",
+                                        "sourceId": "tdbwl",
+                                        "destinationId": "jtnjex",
+                                        "interactionStyle": "Synchronous"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "views": {
+        "systemContextViews": [
+            {
+                "key": "ToDo System",
+                "elements": [
+                    {
+                        "id": "19n71qe"
+                    },
+                    {
+                        "id": "1qbyk9e"
+                    }
+                ],
+                "relationships": [
+                    {
+                        "id": "1pujjwe",
+                        "description": "Reads and writes tasks using"
+                    }
+                ],
+                "enterpriseBoundaryVisible": true,
+                "softwareSystemId": "19n71qe"
+            }
+        ],
+        "containerViews": [
+            {
+                "description": "Container diagram for the ToDo System",
+                "key": "Containers",
+                "elements": [
+                    {
+                        "id": "1c1foek"
+                    },
+                    {
+                        "id": "1qbyk9e"
+                    },
+                    {
+                        "id": "1w93slu"
+                    },
+                    {
+                        "id": "1yowx65"
+                    },
+                    {
+                        "id": "61djpz"
+                    },
+                    {
+                        "id": "km6zjd"
+                    },
+                    {
+                        "id": "ydttl7"
+                    }
+                ],
+                "relationships": [
+                    {
+                        "id": "1g2f61m",
+                        "description": "Produces"
+                    },
+                    {
+                        "id": "1tji7b1",
+                        "description": "Writes to"
+                    },
+                    {
+                        "id": "6p71aq",
+                        "description": "Reads from and Writes to"
+                    },
+                    {
+                        "id": "86cjth",
+                        "description": "Reads and writes tasks using"
+                    },
+                    {
+                        "id": "87fyvk",
+                        "description": "Reads and writes tasks using"
+                    },
+                    {
+                        "id": "cc35y1",
+                        "description": "Uses"
+                    },
+                    {
+                        "id": "ioj02d",
+                        "description": "Consumes"
+                    },
+                    {
+                        "id": "vpkdtc",
+                        "description": "Reads from"
+                    }
+                ],
+                "externalSoftwareSystemBoundariesVisible": true,
+                "softwareSystemId": "19n71qe"
+            }
+        ],
+        "componentViews": [
+            {
+                "description": "Component diagram for the CLI Server",
+                "key": "CLI",
+                "elements": [
+                    {
+                        "id": "nd2bu1"
+                    },
+                    {
+                        "id": "xzxetg"
+                    }
+                ],
+                "relationships": [
+                    {
+                        "id": "1iowpht",
+                        "description": "Uses"
+                    }
+                ],
+                "externalContainersBoundariesVisible": true,
+                "containerId": "1yowx65"
+            },
+            {
+                "description": "Component diagram for the Elasticsearch Indexer",
+                "key": "ElasticSearch Indexer",
+                "elements": [
+                    {
+                        "id": "1c1foek"
+                    },
+                    {
+                        "id": "5roj5e"
+                    },
+                    {
+                        "id": "d247gf"
+                    },
+                    {
+                        "id": "km6zjd"
+                    }
+                ],
+                "relationships": [
+                    {
+                        "id": "10uxia2",
+                        "description": "Writes records to"
+                    },
+                    {
+                        "id": "157m6vt",
+                        "description": "Consumes events from"
+                    }
+                ],
+                "externalContainersBoundariesVisible": true,
+                "containerId": "61djpz"
+            },
+            {
+                "description": "Component diagram for the REST Server",
+                "key": "RESTful API",
+                "elements": [
+                    {
+                        "id": "1c1foek"
+                    },
+                    {
+                        "id": "1djs5vw"
+                    },
+                    {
+                        "id": "1yowx65"
+                    },
+                    {
+                        "id": "a6awuc"
+                    },
+                    {
+                        "id": "jtnjex"
+                    },
+                    {
+                        "id": "km6zjd"
+                    },
+                    {
+                        "id": "s37ja4"
+                    },
+                    {
+                        "id": "tdbwl"
+                    },
+                    {
+                        "id": "ydttl7"
+                    }
+                ],
+                "relationships": [
+                    {
+                        "id": "16q3q9m",
+                        "description": "Uses"
+                    },
+                    {
+                        "id": "1b4rih3",
+                        "description": "Uses"
+                    },
+                    {
+                        "id": "1vurlwd",
+                        "description": "Produce events to"
+                    },
+                    {
+                        "id": "9xszcx",
+                        "description": "Uses"
+                    },
+                    {
+                        "id": "bjyiv3",
+                        "description": "Uses"
+                    },
+                    {
+                        "id": "n9jhxw",
+                        "description": "Uses"
+                    },
+                    {
+                        "id": "okfz4b",
+                        "description": "Reads records from"
+                    },
+                    {
+                        "id": "zmmhk7",
+                        "description": "Reads and writes tasks using"
+                    }
+                ],
+                "externalContainersBoundariesVisible": true,
+                "containerId": "1w93slu"
+            }
+        ],
+        "styles": {
+            "elements": [
+                {
+                    "tag": "Command Line Interface",
+                    "shape": "RoundedBox"
+                },
+                {
+                    "tag": "Component",
+                    "background": "#85bbf0",
+                    "color": "#000000"
+                },
+                {
+                    "tag": "Container",
+                    "background": "#438dd5",
+                    "color": "#ffffff"
+                },
+                {
+                    "tag": "Database",
+                    "shape": "Cylinder"
+                },
+                {
+                    "tag": "Person",
+                    "background": "#08427b",
+                    "color": "#ffffff",
+                    "shape": "Person"
+                },
+                {
+                    "tag": "Software System",
+                    "background": "#1168bd",
+                    "color": "#ffffff"
+                }
+            ]
+        }
+    }
+}
